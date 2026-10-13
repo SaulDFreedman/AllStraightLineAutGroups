@@ -26,7 +26,7 @@ Returns: If ex is false, return a record rec where:
 		 
          If ex is true, return true if a straight line drawing of G in the plane has a non-trivial geometric symmetry (that does not fix all vertices of G), false otherwise.
 
-Last updated: September 10 2026.
+Last updated: October 13 2026.
 */
 			
 AllStraightLineAutGroups := function(G: Existence := false, AutKnown := false, AutGp := SymmetricGroup(1), Alg := "nauty")
@@ -215,7 +215,6 @@ AllStraightLineAutGroups := function(G: Existence := false, AutKnown := false, A
 	
 		StraightLineDihedralGroups(i,~dihedralgps,~Kleinfours,~cycsubdone);
 		nofixeddihedrals := nofixeddihedrals cat dihedralgps;
-		print <Order(i),#nofixeddihedrals>;
 	
 	end for;
 	
