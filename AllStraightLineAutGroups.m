@@ -15,7 +15,7 @@ Parameters: ex - false to execute algorithm 1) above, true to execute algorithm 
 			known - true if the user will provide the automorphism group of G, false otherwise (false by default).
 			autgp - the automorphism group of G (only relevant if known is true; set to the trivial group by default).
 			alg - the algorithm to be used to calculate the automorphism group of G (if known is false or no automorphism group is provided), either "nauty" or "Traces" ("nauty" by default).
-				  Note: as of Magma V2.29-10, the Traces algorithm may not function correctly for certain graphs.
+				  Note: as of Magma V2.29-10, the Traces algorithm may not function correctly for certain graphs. This was corrected in V2.30-1.
 			
 Returns: If ex is false, return a record rec where:
 			rec`semiregs is a sequence of generators of cyclic subgroups realizable as rotations with no fixed vertices;
